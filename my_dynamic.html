@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> STEVEN </title>
+	<script language="javascript" src="jquery.js"></script>
+	<script language="javascript">
+
+	$(document).ready(function() {
+	
+
+	$("#link_home").click(function(){
+		$('#project_1').fadeOut(600);
+		$('#project_2').fadeOut(600);
+		$('#resume').fadeOut(600);
+	});
+
+	$("#link_prj1").click(function(){
+		$('#project_2').fadeOut(600);
+		$('#resume').fadeOut(600);
+			$('#project_1').fadeIn(1200);
+	});
+
+	$("#link_prj2").click(function(){
+		$('#project_1').fadeOut(600);
+		$('#resume').fadeOut(600);
+			$('#project_2').fadeIn(1200);
+	});
+	
+	$("#link_resm").click(function(){
+		$('#project_1').fadeOut(600);
+		$('#project_2').fadeOut(600);
+			$('#resume').fadeIn(1200);
+		});	
+	});	
+	
+	</script>
+
+	<style>
+		
+		body {
+			font-family: verdana, geneva, arial, helvetica, sans-serif; 
+			
+		}	
+		#nav {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+		
+		}
+		.section {
+			position:fixed;
+			top:60px;
+			left:500px;
+			display:none;
+		}
+	</style>
+	
+</head>
+<body background="/Users/dpos/Sites/images/wallpaper.jpg">
+
+<ul id="nav">
+	<li> <a id="link_home" href="#"> <font size="10">Steven</font> </a> </li>
+	<br>
+	<br>
+	<li><a id="link_prj1" href="#">Flower Thing</a></li>
+	<br>
+	<li><a id="link_prj2" href="#">Monster</a></li>	
+	<br>
+	<li><a id="link_resm" href="#">Resume</a></li>
+</ul>
+
+	
+<div class="section" id="project_1">
+
+	<h1><font size="20" color="#3399cc">Flower Thing</font></h1>
+		
+<!---------------------Flower Thing------------------------------------------------------------>		
+  
+	
+  <head>
+    <!-- charset must remain utf-8 to be handled properly by Processing -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <style type="text/css">
+      /* <![CDATA[ */
+	
+	body {
+  	  margin: 60px 0px 0px 55px;
+	  text-decoration: none; 
+	  font-weight: normal; 
+	  line-height: normal; 
+	}
+		 
+	a          { color: #3399cc; }
+	a:link     { color: #3399cc; text-decoration: underline; }
+	a:visited  { color: #3399cc; text-decoration: underline; }
+	a:active   { color: #3399cc; text-decoration: underline; }
+	a:hover    { color: #3399cc; text-decoration: underline; }
+
+      /* ]]> */
+    </style>    
+  </head>
+
+    <div id="content">
+      <div id="flower_container">
+
+	<!-- This version plays nicer with older browsers, 
+	     but requires JavaScript to be enabled. 
+	     http://java.sun.com/javase/6/docs/technotes/guides/jweb/deployment_advice.html
+	     http://download.oracle.com/javase/tutorial/deployment/deploymentInDepth/ -->
+	<script type="text/javascript"
+		src="http://www.java.com/js/deployJava.js"></script>
+	<script type="text/javascript">
+	  /* <![CDATA[ */
+
+	  var attributes = { 
+            code: 'flower.class',
+            archive: 'flower.jar',
+            width: 500, 
+            height: 500,
+          };
+          var parameters = { 
+            image: 'loading.gif',
+            centerimage: 'true',
+          };
+          var version = '1.5';
+          deployJava.runApplet(attributes, parameters, version);
+
+          /* ]]> */
+        </script>
+        
+	<noscript> <div>
+	  <!--[if !IE]> -->
+	  <object classid="java:flower.class" 
+            	  type="application/x-java-applet"
+            	  archive="flower.jar"
+            	  width="500" height="500"
+            	  standby="Loading Processing software..." >
+            
+	    <param name="archive" value="flower.jar" />
+	    
+	    <param name="mayscript" value="true" />
+	    <param name="scriptable" value="true" />
+	    
+	    <param name="image" value="loading.gif" />
+	    <param name="boxmessage" value="Loading Processing software..." />
+	    <param name="boxbgcolor" value="#FFFFFF" />
+	  <!--<![endif]-->
+
+	    <!-- For more instructions on deployment, 
+		 or to update the CAB file listed here, see:
+		 http://java.sun.com/javase/6/webnotes/family-clsid.html
+		 http://java.sun.com/javase/6/webnotes/install/jre/autodownload.html -->
+	    <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+		    codebase="http://java.sun.com/update/1.6.0/jinstall-6u20-windows-i586.cab"
+		    width="500" height="500"
+		    standby="Loading Processing software..."  >
+	      
+	      <param name="code" value="flower" />
+	      <param name="archive" value="flower.jar" />
+	      
+	      <param name="mayscript" value="true" />
+	      <param name="scriptable" value="true" />
+	      
+	      <param name="image" value="loading.gif" />
+	      <param name="boxmessage" value="Loading Processing software..." />
+	      <param name="boxbgcolor" value="#FFFFFF" />
+	      
+	      <p>
+		<strong>
+		  This browser does not have a Java Plug-in.
+		  <br />
+		  <a href="http://www.java.com/getjava" title="Download Java Plug-in">
+		    Get the latest Java Plug-in here.
+		  </a>
+		</strong>
+	      </p>
+	      
+	    </object>
+	    
+	  <!--[if !IE]> -->
+	  </object>
+	  <!--<![endif]-->
+
+	</div> </noscript>
+
+      </div>
+		<font color="#3399cc">code: <a href="flower.pde">flower</a></font>
+    </div>
+
+
+<!--------------------------------------------------------------------------------------------------------->	
+
+		<font color="#3399cc">Made with Doug</font>
+
+</div>
+
+<div class="section" id="project_2">
+	<h1><font size="20" color="#3399cc">Monster</font></h1>
+	<p>
+	
+<!--------Monster------------------------------------------------------------------------------------------>
+  <head>
+    <!-- charset must remain utf-8 to be handled properly by Processing -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>monster : Built with Processing</title>
+
+    <style type="text/css">
+      /* <![CDATA[ */
+	
+	body {
+  	  margin: 60px 0px 0px 55px;
+	  text-decoration: none; 
+	  font-weight: normal; 
+	  line-height: normal; 
+	}
+		 
+	a          { color: #3399cc; }
+	a:link     { color: #3399cc; text-decoration: underline; }
+	a:visited  { color: #3399cc; text-decoration: underline; }
+	a:active   { color: #3399cc; text-decoration: underline; }
+	a:hover    { color: #3399cc; text-decoration: underline; }
+
+      /* ]]> */
+    </style>    
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="monster_container">
+
+	<!-- This version plays nicer with older browsers, 
+	     but requires JavaScript to be enabled. 
+	     http://java.sun.com/javase/6/docs/technotes/guides/jweb/deployment_advice.html
+	     http://download.oracle.com/javase/tutorial/deployment/deploymentInDepth/ -->
+	<script type="text/javascript"
+		src="http://www.java.com/js/deployJava.js"></script>
+	<script type="text/javascript">
+	  /* <![CDATA[ */
+
+	  var attributes = { 
+            code: 'monster.class',
+            archive: 'monster.jar',
+            width: 900, 
+            height: 700,
+          };
+          var parameters = { 
+            image: 'loading.gif',
+            centerimage: 'true',
+          };
+          var version = '1.5';
+          deployJava.runApplet(attributes, parameters, version);
+
+          /* ]]> */
+        </script>
+        
+	<noscript> <div>
+	  <!--[if !IE]> -->
+	  <object classid="java:monster.class" 
+            	  type="application/x-java-applet"
+            	  archive="monster.jar"
+            	  width="600" height="400"
+            	  standby="Loading Processing software..." >
+            
+	    <param name="archive" value="monster.jar" />
+	    
+	    <param name="mayscript" value="true" />
+	    <param name="scriptable" value="true" />
+	    
+	    <param name="image" value="loading.gif" />
+	    <param name="boxmessage" value="Loading Processing software..." />
+	    <param name="boxbgcolor" value="#FFFFFF" />
+	  <!--<![endif]-->
+
+	    <!-- For more instructions on deployment, 
+		 or to update the CAB file listed here, see:
+		 http://java.sun.com/javase/6/webnotes/family-clsid.html
+		 http://java.sun.com/javase/6/webnotes/install/jre/autodownload.html -->
+	    <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+		    codebase="http://java.sun.com/update/1.6.0/jinstall-6u20-windows-i586.cab"
+		    width="600" height="400"
+		    standby="Loading Processing software..."  >
+	      
+	      <param name="code" value="monster" />
+	      <param name="archive" value="monster.jar" />
+	      
+	      <param name="mayscript" value="true" />
+	      <param name="scriptable" value="true" />
+	      
+	      <param name="image" value="loading.gif" />
+	      <param name="boxmessage" value="Loading Processing software..." />
+	      <param name="boxbgcolor" value="#FFFFFF" />
+	      
+	      <p>
+		<strong>
+		  This browser does not have a Java Plug-in.
+		  <br />
+		  <a href="http://www.java.com/getjava" title="Download Java Plug-in">
+		    Get the latest Java Plug-in here.
+		  </a>
+		</strong>
+	      </p>
+	      
+	    </object>
+	    
+	  <!--[if !IE]> -->
+	  </object>
+	  <!--<![endif]-->
+
+	</div> </noscript>
+
+      </div>
+	Source code: <a href="monster.pde">monster</a> <a href="arm.pde">arm</a> <a href="eye.pde">eye</a> 
+    </div>
+
+
+<!--------------------------------------------------------------------------------------------------------->
+		
+	</p>
+</div>
+
+<!------RESUME------------------------------------------------------>
+<div class="section" id="resume">
+	
+	<a style="margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block; text-decoration: underline;"></a>
+	<iframe class="scribd_iframe_embed" src="http://www.scribd.com/embeds/92163996/content?start_page=1&view_mode=list&access_key=key-22cz7w4mfef8i1v8m0ji" data-auto-height="true" data-aspect-ratio="0.772727272727273" scrolling="no" id="doc_84672" width="750" height="1000" frameborder="0"></iframe>
+	
+</div>	
+		
+</body>
+</html>
